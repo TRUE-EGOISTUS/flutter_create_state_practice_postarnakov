@@ -1,16 +1,24 @@
-# flutter_create_state_practice_postarnakov
+# Краткий отчет по практической работе №4
+## Выполнил Постарнаков С.В ЭФБО-06-23
+В практической работе №4 нужно было реализовать приложениие с простым счетчиком. В основе этого счетчика лежит StatefulWidget, где хранится переменная и функции для увеличения и сброса числа в счетчике. Но помимо их также использовались следующие элементы:
+1) GestureDetector, который считывает клики на кнопках и тем самым активирует те или иные функции которые привязанны к той или иной кнопке
+2) Кнопки сами были реализованы при помощи Container и Text, для того, чтобы сделать кнопки уникальными.
+3) Также были использованны различные цвета для лучшего отображения кнопок и текста на экране.
 
-A new Flutter project.
+Теперь пройдемся подробнее о самих функциях и переменной, которые, собственно и отвечают за работу самого счетчика. Как было сказано ранее для работы этих самых кнопок использовался такая функция, как GestureDetector, которая отвечает за чтение кликов по кнопкам. 
+Но работы одной этой функции будет недостаточно для полнценной работы счетчика. Чтобы счетчик работал как надо, были созданы следующие функции:
+1) increment, который позволяет увеличивать число на +1
+2) DropCounter, который сбрасывает значение счетчика до 0
+3) Также была дополнительно реализована функция TenTimesIncrement, которая позволяет при долгом нажатии увеличить число на 10 пунктов
 
-## Getting Started
+Ниже будут представлены небольшие видеоролики функционала приложения
 
-This project is a starting point for a Flutter application.
+# Видео 1: Увеличение счетчика при простом нажатии на кнопку
+https://github.com/user-attachments/assets/a09bca31-3da4-4636-b146-7b1a398cb264
 
-A few resources to get you started if this is your first Flutter project:
+# Видео 2: Увеличение счетчика при долгом нажатии на кнопку
+https://github.com/user-attachments/assets/4928ec97-e203-49b7-9609-94f75fad025d
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Видео 3: Сброс счетчика
+https://github.com/user-attachments/assets/c1df4920-2dc6-4e43-8df1-d863f21b4c24
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
